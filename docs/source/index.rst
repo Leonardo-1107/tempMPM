@@ -18,6 +18,4 @@ Contents
 
 .. toctree::
 
-   usage
-   api
-   mpm
+* :ref:`mpm`
