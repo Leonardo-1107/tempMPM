@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'human_volunteer'
+project = 'AutoMPM Tutorial'
 copyright = '2023, kuma'
 author = 'kuma'
 
