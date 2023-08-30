@@ -1,11 +1,8 @@
-MPM Tutorial
+Introduction
 ============
 
 Automated System for MPM
 -------------------------
-
-Introduction
-^^^^^^^^^^^^
 
 AutoMPM is a tool developed for automatic machine learning in Mineral Persepective Mapping field. It's a both user-friendly and efficient python-based tool.
 
@@ -84,7 +81,7 @@ Prepare to embark on your AutoMPM journey by following these steps:
 By embracing the AutoMPM toolkit, you'll empower your mineral prospectivity mapping endeavors with automation, precision, and enhanced insights. Let AutoMPM be your guide to a new era of efficient exploration.
 
 
-Bayesian Optimization in MPM
+Bayesian Optimization in AutoMPM
 ============================
 
 .. image:: fig2.png
