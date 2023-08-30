@@ -185,4 +185,4 @@ The selection of different interpolation strategies in ``method.py``.
 - ``scipy.interpolate.interp2d`` with interpolation kinds of ['linear', 'cubic', 'quintic'].
 - Kriging interpolation with interpolation kinds of ["linear", "gaussian", "exponential", "hole-effect"].
 
-Automated selection entails favoring the method characterized by the minimal Mean Squared Error (MSE) loss value, thus designating it as the introductory technique of choice.
+Automated selection entails favoring the method characterized by the minimal Mean Squared Error (MSE) loss value or the performance metric sore (F1 score etc.), thus designating it as the introductory technique of choice. The default choose criterion is MSE loss.
