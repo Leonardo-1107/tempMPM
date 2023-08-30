@@ -1,4 +1,4 @@
-Illustration Docunment of MPM
+Illustration Docunment of AutoMPM
 =================================
 
 .. toctree::
