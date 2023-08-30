@@ -1,5 +1,5 @@
-Illustration Docunment of AutoMPM
-=================================
+Illustration Document of AutoMPM
+================================
 
 .. toctree::
    :maxdepth: 2
