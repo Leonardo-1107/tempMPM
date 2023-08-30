@@ -1,5 +1,5 @@
-Illustration Document of AutoMPM
-================================
+Automated Machine Learning System for Mineral Prosperity Mapping
+================================================================
 
 .. toctree::
    :maxdepth: 2
