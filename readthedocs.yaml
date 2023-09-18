@@ -9,6 +9,7 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.11"
+    sphinx-rtd-theme: ">=0.5.2"
     # You can also specify other tool versions:
     # nodejs: "20"
     # rust: "1.70"
