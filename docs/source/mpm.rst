@@ -53,7 +53,7 @@ Algorithmic Predictions
 The heart of AutoMPM lies in its algorithmic predictions. Discover the standard class structure for encapsulating gold mine prediction algorithms:
 
 - ``__init__(self, params)``: Initialize the algorithm with parameters, unpacking them to the super class.
-- ``predicter(self, X)``: Unveil 2-class results and probability predictions for sample classifications.
+- ``predictor(self, X)``: Unveil 2-class results and probability predictions for sample classifications.
 
 Hyperparameter Constraints
 --------------------------

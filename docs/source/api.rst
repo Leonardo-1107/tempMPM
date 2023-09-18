@@ -23,7 +23,7 @@ The explanation of some functions in **utils.py**:
 ## Algorithm  
 The algorithm to predict gold mine should be encapsulated into a standard class which defines:
 + **__init__(self, params)**: Take *params* as the parameter of init function, and unpack it to the init function of super class.
-+ **predicter(self, X)**: Return both 2-class-result and the probability-result of samples being classified as positive ones.
++ **predictor(self, X)**: Return both 2-class-result and the probability-result of samples being classified as positive ones.
 
 ## Constraints
 The constraints on hyperparameters of the algorithm, requiring:
