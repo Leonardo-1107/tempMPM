@@ -1,8 +1,8 @@
 Introduction
 ============
 
-Automated System for Mineral Prospective Mapping
-------------------------------------------------
+Automated System for MPM
+-------------------------
 
 AutoMPM is a tool developed for automatic machine learning in Mineral Prospective Mapping (MPM). It provides user-friendly python-based interface for MPM.
 
@@ -17,9 +17,7 @@ AutoMPM stands as an innovative solution, purposefully crafted to revolutionize 
 AutoMPM User Guide
 ==================
 
-Welcome to the AutoMPM user guide, where we delve into the efficient and automated world of MPM. AutoMPM is designed to streamline the MPM process, leveraging advanced machine learning techniques to uncover high-potential mineral deposits. Say goodbye to manual, time-consuming methods and embrace a future of accelerated insights and reduced biases.
-
-Here we will take ``Idaho`` dataset as an example in tutorial.
+Welcome to the AutoMPM user guide, where we delve into the efficient and automated world of Mineral Prospectivity Mapping (MPM). AutoMPM is designed to streamline the MPM process, leveraging advanced machine learning techniques to uncover high-potential mineral deposits. Say goodbye to manual, time-consuming methods and embrace a future of accelerated insights and reduced biases.
 
 Pre-processing Dataset 
 ----------------------
