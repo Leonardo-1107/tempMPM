@@ -462,18 +462,18 @@ Code structure of AutoMPM:
 - ``interpolation.py``: The optimization for interpolation
 - ``test.py``: The template code to run
 
-Essential classes in AutoMPM
-----------------------------
+.. Essential classes in AutoMPM
+.. ----------------------------
 
-.. autoclass:: optimization.Bayesian_optimization
-    :members:
-    :undoc-members:
-    :member-order: bysource
-    :show-inheritance:
+.. .. autoclass:: optimization.Bayesian_optimization
+..     :members:
+..     :undoc-members:
+..     :member-order: bysource
+..     :show-inheritance:
 
-.. autoclass:: model.Model
-    :members:
-    :undoc-members:
-    :member-order: bysource
-    :show-inheritance:
+.. .. autoclass:: model.Model
+..     :members:
+..     :undoc-members:
+..     :member-order: bysource
+..     :show-inheritance:
 
