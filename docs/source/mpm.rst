@@ -115,7 +115,7 @@ The selection of different interpolation strategies in ``method.py``.
     result = interpOPT.optimize(x_geo, y_geo, z, x_max, y_max)
 
 
-Automated selection entails favoring the method with the lower Mean Squared Error (MSE) loss value or higher performance metric sore (F1 score etc.), thus designating it as the introductory technique of choice. The default choose criterion is MSE loss.
+Automated selection entails favoring the method with the lower Mean Squared Error (MSE) loss value or higher performance metric sore (F1 score etc.), thus designating it as the introductory technique of choice. The default choice of criterion is MSE loss.
 
 Feature Filtering
 ^^^^^^^^^^^^^^^^^
@@ -207,7 +207,7 @@ After pre-processing, the data package is input into the automatic system. It's 
    :align: center
    :width: 700px 
 
-The output of AutoMPM lies cames from its algorithmic predictions. Discover the standard class structure for encapsulating gold mine prediction algorithms:
+The output of AutoMPM comes from its algorithmic predictions. Discover the standard class structure for encapsulating gold mine prediction algorithms:
 
 .. code-block:: python
 
