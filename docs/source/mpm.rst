@@ -196,7 +196,7 @@ After all the pre-processing stages, the raw data will be packed in a *.pkl* fil
         pickle.dump(dataset, f)
 
 
-Algorithmic Predictions
+Algorithm and Hyperparameter Selection
 -----------------------
 
 Bayesian Optimization Auto-ML system
