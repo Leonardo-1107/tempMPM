@@ -10,14 +10,14 @@ AutoMPM is a tool developed for automatic machine learning in Mineral Prospectiv
    :align: center
    :width: 600px  
 
-AutoMPM stands as an innovative solution, purposefully crafted to revolutionize the landscape of MPM through automated machine learning. In the realm of mineral resource exploration, MPM serves as a cornerstone, pinpointing locales with elevated potential for distinct mineral deposits. Traditionally, these endeavors demanded laborious, hands-on techniques, characterized by protracted timelines and susceptibility to inherent human inclinations. AutoMPM ushers in a paradigm shift, offering an advanced toolset that streamlines and refines this process with cutting-edge automation.
+AutoMPM stands as an innovative solution, purposefully crafted to revolutionize the landscape of MPM through automated machine learning. In the realm of mineral resource exploration, MPM serves as a cornerstone, pinpointing locales with elevated potential for distinct mineral deposits. Previously, these endeavors demanded laborious, hands-on techniques, characterized by protracted timelines and susceptibility to inherent human inclinations. AutoMPM ushers in a paradigm shift, offering an advanced toolset that streamlines and refines this process with cutting-edge automation.
 
 
 
 AutoMPM User Guide
 ==================
 
-Welcome to the AutoMPM user guide, where we delve into the efficient and automated world of Mineral Prospectivity Mapping (MPM). AutoMPM is designed to streamline the MPM process, leveraging advanced machine learning techniques to uncover high-potential mineral deposits. Say goodbye to manual, time-consuming methods and embrace a future of accelerated insights and reduced biases.
+Welcome to the AutoMPM user guide, where we delve into the efficient and automated world of Mineral Prospectivity Mapping. AutoMPM is designed to streamline the MPM process, leveraging advanced machine learning techniques to uncover high-potential mineral deposits. Say goodbye to manual, time-consuming methods and embrace a future of accelerated insights and reduced biases.
 
 Pre-processing Dataset 
 ----------------------
@@ -29,13 +29,13 @@ Navigate the preprocessing phase with finesse, utilizing the functions found in 
 - ``preprocess_all_data``: Preprocess raw data across all datasets, excluding *Washington*.
 - ``preprocess_data_interpolate``: Special preprocessing for the *Washington* dataset.
 
-Mineral exploration datasets encompass geological, geophysical, geochemical, remote sensing, and drilling data, characterized by various types, scales, file sizes, non-stationarity, and heterogeneity. Given this diversity, autoMPM will consider and process both physical and chemical assessments such as gravity information and heat-map of chemical elements. 
+Mineral exploration datasets encompass geological, geophysical, geochemical, remote sensing, and drilling data, characterized by various types, scales, file sizes, non-stationarity, and heterogeneity. Given this diversity, autoMPM considers and processes both physical and chemical information such as gravity and heat-map of chemical elements. 
 
 .. image:: p2c.png
    :align: center
    :width: 700px  
 
-Here we extract the mask and features of Idaho dataset by reading all the corresponding file:
+Take the Idaho dataset as an example, we can extract the features and mask data from this dataset by reading all the corresponding file (the mask indicate the intereted areas),
 
 .. code-block:: python
 
@@ -62,7 +62,7 @@ Here we extract the mask and features of Idaho dataset by reading all the corres
                 feature_list.append(feature)
                 feature_dict[feature] = np.array(rst)
 
-And process the labels by dealing the ''common_main'' in deposite files:
+Then, we can process the labels by dealing the deposite files in this dataset,
 
 .. code-block:: python
 
@@ -85,7 +85,7 @@ And process the labels by dealing the ''common_main'' in deposite files:
 
 
 
-Moreover, 4 stages are included in the further data pre-processing pipeline: auto-interpolation, feature filtering, data enhancement and data split.
+Afterwards, four stages are included in the next data pre-processing pipeline: auto-interpolation, feature filtering, data enhancement and data split. These are done in an automatical way to reduce users' overhead,
 
 Auto-Interpolation
 ^^^^^^^^^^^^^^^^^^
@@ -115,7 +115,7 @@ The selection of different interpolation strategies in ``method.py``.
     result = interpOPT.optimize(x_geo, y_geo, z, x_max, y_max)
 
 
-Automated selection entails favoring the method characterized by the minimal Mean Squared Error (MSE) loss value or the performance metric sore (F1 score etc.), thus designating it as the introductory technique of choice. The default choose criterion is MSE loss.
+Automated selection entails favoring the method with the lower Mean Squared Error (MSE) loss value or higher performance metric sore (F1 score etc.), thus designating it as the introductory technique of choice. The default choose criterion is MSE loss.
 
 Feature Filtering
 ^^^^^^^^^^^^^^^^^
@@ -124,7 +124,7 @@ Feature Filtering
    :align: center
    :width: 400px  
 
-There will be an automated two-tier screening workflow has been devised. In the first tier, the system filters the features based on their Pearson coefficient with the training labels. In the second tier, the system employs Shapley values, which provide a measure of the contribution of each feature to the overall model performance.
+Then, an automated two-tier screening workflow is used in autoMPM. In the first tier, the system filters the features based on their Pearson coefficient with the training labels. In the second tier, the system employs Shapley values, which provide a systematic measure of the contribution of each individual feature to the overall model performance.
 
 - ``Feature_Filter.get_shapely`` a highly integrated function that output the Shapley vlaue with assistance of a random forest classifier.
 - ``Feature_Filter.select_top_features`` automatically select the top-k features. k is set default to 20. 
@@ -201,7 +201,7 @@ Algorithmic Predictions
 
 Bayesian Optimization Auto-ML system
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-After pre-processing we directly input the data package into the automatic system. It's driven by Bayesian Optimization which will choose and optimize and best algorithm and corresponding hyperparameters. Here we adopt a parallel and multi-fidelity accelerated design in our auto system.
+After pre-processing, the data package is input into the automatic system. It's driven by Bayesian Optimization which will choose and optimize and best algorithm and its corresponding hyperparameters. Here we adopt a parallel and multi-fidelity accelerated design in our auto system.
 
 .. image:: accelerate.png
    :align: center
@@ -278,7 +278,7 @@ Prepare to embark on your AutoMPM journey by following these steps:
 
 4. **Check the Output**: The output will be recorded in a *.md* file in *run* folder.
 
-By embracing the AutoMPM toolkit, you'll empower your mineral prospectivity mapping endeavors with automation, precision, and enhanced insights. Let AutoMPM be your guide to a new era of efficient exploration.
+With the AutoMPM toolkit, you can accelerate the mineral prospectivity mapping endeavors with automation, precision, and enhanced insights. Let AutoMPM be your assistant for efficient exploration.
 
 
 
@@ -296,7 +296,7 @@ Optimization Logic
 The logic workflow of hyperparameter optimization in ``optimization.py``.
 
 - Automatically choose the best hyperparameters for the machine learning algorithm.
-- Multi-processing on multiple threads to accelerate the predicting process. Simultaneously evaluate multiple parameters in parallel, aggregate and proceed to the next iteration.
+- Multi-processing on multiple threads to accelerate the predicting process. It simultaneously evaluates multiple parameters in parallel, aggregates results and proceeds to the next iteration.
 - Employing a multi-fidelity strategy, an initial low-fidelity estimation is conducted using a weighted cross-entropy metric. If performance surpasses a set threshold, a high-fidelity estimation is executed for refinement.
 
 
@@ -382,7 +382,7 @@ Method Selection
 
 The selection of different machine learning methods in ``method.py``.
 
-- Evaluate each method with steps in low-fidelity Bayesian Optimization, and choose the best one with the best performance.
+- Evaluate each method with steps in low-fidelity Bayesian optimization, and choose the one with the best performance.
 
 .. code-block:: python
 
