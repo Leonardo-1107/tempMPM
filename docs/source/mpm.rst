@@ -92,7 +92,7 @@ Auto-Interpolation
 
 .. image:: interp.png
    :align: center
-   :width: 400px  
+   :width: 600px 
 
 The selection of different interpolation strategies in ``method.py``.
 
@@ -122,7 +122,7 @@ Feature Filtering
 
 .. image:: filtering.png
    :align: center
-   :width: 400px  
+   :width: 600px  
 
 Then, an automated two-tier screening workflow is used in autoMPM. In the first tier, the system filters the features based on their Pearson coefficient with the training labels. In the second tier, the system employs Shapley values, which provide a systematic measure of the contribution of each individual feature to the overall model performance.
 
@@ -139,7 +139,7 @@ Data Enhancement
 ^^^^^^^^^^^^^^^^
 .. image:: enhance.png
    :align: center
-   :width: 400px  
+   :width: 600px  
 
 Data augmentation was employed to expand each ore spot from a single point to a mxm area, which allows for a more comprehensive representation of the ore distribution, capturing the spatial context and potential variations within the surrounding area.
 
@@ -160,7 +160,7 @@ Data Split
 
 .. image:: split.png
    :align: center
-   :width: 400px  
+   :width: 1200px  
 
 - Two data split ways that suitable for different situations:
 
@@ -170,6 +170,11 @@ Data Split
 
 - ``random_split`` for IID case. Split the dataset into train set and test set, and apply K-fold Cross-validation.
 - ``dataset_split`` for OoD case. Split the dataset using K-means clustering, as in ``test_extend`` that generate the mask of test dataset.
+
+
+
+
+
 
 .. code-block:: python
 
@@ -197,7 +202,7 @@ After all the pre-processing stages, the raw data will be packed in a *.pkl* fil
 
 
 Algorithm and Hyperparameter Selection
------------------------
+--------------------------------------
 
 Bayesian Optimization Auto-ML system
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -207,7 +212,7 @@ After pre-processing, the data package is input into the automatic system. It's 
    :align: center
    :width: 700px 
 
-The output of AutoMPM comes from its algorithmic predictions. Discover the standard class structure for encapsulating gold mine prediction algorithms:
+The output of AutoMPM comes from its algorithmic predictions. The algorithm class used for mineral prediction is shown below: (here taken the rfc algorithm as an example)
 
 .. code-block:: python
 
