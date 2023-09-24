@@ -293,7 +293,7 @@ Bayesian Optimization in AutoMPM
 
 .. image:: fig2.png
    :align: center
-   :width: 400px  
+   :width: 700px
 
 Optimization Logic
 ------------------
@@ -304,13 +304,15 @@ The logic workflow of hyperparameter optimization in ``optimization.py``.
 - Multi-processing on multiple threads to accelerate the predicting process. It simultaneously evaluates multiple parameters in parallel, aggregates results and proceeds to the next iteration.
 - Employing a multi-fidelity strategy, an initial low-fidelity estimation is conducted using a weighted cross-entropy metric. If performance surpasses a set threshold, a high-fidelity estimation is executed for refinement.
 
-
 - ``data_path``: Specifies the path to the dataset used for optimization.
 - ``algorithm``: Specifies the machine learning algorithm or model used for optimization.
 - ``mode``: Indicates the optimization mode or strategy.
 - ``metrics``: A list of evaluation metrics, including 'f1' (F1 score), 'auc' (Area Under the ROC Curve), 'pre' (precision score), used during optimization.
 - ``default_params```: Implies that default hyperparameters are initially used for optimization.
 
+.. image:: parallel.png
+   :align: center
+   :width: 700px
 .. code-block:: python
 
     # Initialization
