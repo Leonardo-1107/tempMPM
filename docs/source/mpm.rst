@@ -92,7 +92,7 @@ Auto-Interpolation
 
 .. image:: interp.png
    :align: center
-   :width: 600px 
+   :width: 800px 
 
 The selection of different interpolation strategies in ``method.py``.
 
