@@ -158,7 +158,7 @@ Data augmentation was employed to expand each ore spot from a single point to a 
 Data Split
 ^^^^^^^^^^
 
-.. image:: split.png
+.. image:: split2.png
    :align: center
    :width: 1200px  
 
